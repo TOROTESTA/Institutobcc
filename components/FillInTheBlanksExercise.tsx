@@ -49,26 +49,28 @@ export function FillInTheBlanksExercise({ exercise }: Props) {
 
       <section className="mx-auto max-w-7xl px-4 pb-16 md:px-6">
         {/* Score bar — solo mobile */}
-        <div className="mb-4 flex items-center justify-between rounded-2xl bg-[var(--primary)] px-5 py-4 text-white lg:hidden">
-          <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-white/75">Score</p>
-            <p className="text-3xl font-extrabold">
-              {submitted ? `${score}/${blanks.length}` : "--"}
-            </p>
-          </div>
-          <div className="flex gap-3">
-            <button
-              onClick={() => setSubmitted(true)}
-              className="rounded-xl bg-white px-4 py-2 text-sm font-bold text-[var(--primary)]"
-            >
-              Corregir
-            </button>
-            <button
-              onClick={handleReset}
-              className="rounded-xl border border-white/40 px-4 py-2 text-sm font-bold text-white"
-            >
-              Reiniciar
-            </button>
+        <div className="mb-4 rounded-2xl bg-[var(--primary)] px-5 py-4 text-white lg:hidden">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-white/75">Score</p>
+              <p className="text-3xl font-extrabold">
+                {submitted ? `${score}/${blanks.length}` : "--"}
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={() => setSubmitted(true)}
+                className="rounded-xl bg-white px-3 py-2 text-sm font-bold text-[var(--primary)]"
+              >
+                Corregir
+              </button>
+              <button
+                onClick={handleReset}
+                className="rounded-xl border border-white/40 px-3 py-2 text-sm font-bold text-white"
+              >
+                Reiniciar
+              </button>
+            </div>
           </div>
         </div>
 
