@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Instituto BCC – English Practice
 
-## Getting Started
+A web platform for BCC English Institute students to practice grammar exercises by topic, with instant auto-correction.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 📚 Exercises organized by section, group and topic
+- ✅ Auto-corrected fill-in-the-blank exercises
+- 🎯 Multiple choice exercises
+- 📱 Fully responsive (mobile & desktop)
+- 🗂️ Course-based accordion navigation
+- 🔗 Shareable links per topic and course
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org/) — App Router
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Project Structure
+```
+app/
+  sections/[section]/[topic]/   → Dynamic topic pages
+  page.tsx                      → Home page
+components/
+  FillInTheBlanksExercise.tsx   → Exercise component with auto-correction
+  CourseAccordion.tsx           → Collapsible course sections
+  ExerciseRenderer.tsx          → Exercise type router
+  Header.tsx                    → Site header
+data/
+  sections.ts                   → Navigation structure
+  exercises/
+    index.ts                    → Exercise map and lookup
+    types.ts                    → TypeScript types
+    tenses/                     → Tense exercises
+    modal-verbs/                → Modal verb exercises
+    passive-voice/              → Passive voice exercises
+    reported-speech/            → Reported speech exercises
+    multiple-choice/            → Multiple choice exercises
+    ...                         → Other topics
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting Started
+```bash
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Adding New Exercises
 
-## Learn More
+1. Open the relevant file in `data/exercises/<section>/<topic>.ts`
+2. Add a new exercise object to the `exercises` array
+3. Follow the existing structure — no other files need to be changed
 
-To learn more about Next.js, take a look at the following resources:
+### Exercise with course (shows as accordion):
+```typescript
+{
+  id: "unique-id",
+  title: "Exercise 1 – Description",
+  course: "Course Name",
+  type: "fill-in-the-blanks",
+  parts: [
+    { type: "text", value: "She " },
+    { type: "blank", id: "b1", answers: ["has lived"], placeholder: "live" },
+    { type: "text", value: " here for years." },
+  ],
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Exercise without course (shows directly):
+```typescript
+{
+  id: "unique-id",
+  title: "Exercise 1 – Description",
+  type: "fill-in-the-blanks",
+  parts: [...],
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Wide blank (for full sentence answers):
+```typescript
+{ type: "blank", id: "b1", answers: ["was built"], placeholder: "...", wide: true }
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployed on [Vercel](https://vercel.com/). Every push to `main` triggers a new deployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with ❤️ for Instituto BCC.
