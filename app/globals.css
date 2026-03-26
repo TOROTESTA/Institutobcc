@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #163f6b;
+  --primary-dark: #102f52;
+  --primary-soft: #e8f0f8;
+  --accent: #f62b52;
+  --accent-soft: #fde8ee;
+  --surface: #f6f8fb;
+  --text: #4a6078;
+  --text-dark: #20384f;
+  --border: #d9e2ec;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--surface);
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-section {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 0.82) 38%,
+      rgba(253, 232, 238, 0.72) 100%
+    );
+}
+
+.exercise-hero {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(232, 240, 248, 0.9) 100%
+    );
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 1.4rem;
+  border-radius: 14px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  transition: 0.2s ease;
+  box-shadow: 0 10px 25px rgba(246, 43, 82, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  background: #e62249;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 1.4rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--primary);
+  font-weight: 700;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #f9fbfd;
+}
+
+.section-kicker {
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--primary);
+}
+
+.section-text {
+  margin-top: 1rem;
+  max-width: 720px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.exercise-card {
+  border-radius: 1.5rem;
+  border: 1px solid var(--border);
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(16, 47, 82, 0.06);
+  transition: 0.2s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(16, 47, 82, 0.12);
+}
+
+.exercise-page-wrap {
+  min-height: calc(100vh - 80px);
+}

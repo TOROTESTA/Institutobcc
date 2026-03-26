@@ -1,0 +1,170 @@
+import type { Exercise } from "../types";
+
+export const exercises: Exercise[] = [
+  {
+    id: "past-001",
+    title: "Exercise 1 – Complete using the Past Simple",
+    type: "fill-in-the-blanks",
+    parts: [
+      { type: "text", value: "Yesterday I " },
+      { type: "blank", id: "past-1-1", answers: ["had"], placeholder: "have" },
+      { type: "text", value: " a really bad day. I " },
+      { type: "blank", id: "past-1-2", answers: ["woke"], placeholder: "wake" },
+      { type: "text", value: " up at 9 o'clock because I " },
+      { type: "blank", id: "past-1-3", answers: ["forgot"], placeholder: "forget" },
+      { type: "text", value: " to set my alarm clock the night before. I " },
+      { type: "blank", id: "past-1-4", answers: ["got"], placeholder: "get" },
+      { type: "text", value: " up as fast as I " },
+      { type: "blank", id: "past-1-5", answers: ["could"], placeholder: "can" },
+      { type: "text", value: " and I " },
+      { type: "blank", id: "past-1-6", answers: ["put"], placeholder: "put" },
+      { type: "text", value: " on some clothes. I ran into the kitchen and " },
+      { type: "blank", id: "past-1-7", answers: ["made"], placeholder: "make" },
+      { type: "text", value: " myself a cup of coffee. Then I " },
+      { type: "blank", id: "past-1-8", answers: ["drank"], placeholder: "drink" },
+      { type: "text", value: " the coffee very fast and I " },
+      { type: "blank", id: "past-1-9", answers: ["ran"], placeholder: "run" },
+      { type: "text", value: " to my car. It " },
+      { type: "blank", id: "past-1-10", answers: ["was"], placeholder: "be" },
+      { type: "text", value: " a terrible morning!" },
+    ],
+  },
+
+  {
+    id: "past-002",
+    title: "Exercise 2 – Complete using the Past Simple",
+    type: "fill-in-the-blanks",
+    parts: [
+      { type: "text", value: "1- What time " },
+      { type: "blank", id: "past-2-1", answers: ["did"], placeholder: "did" },
+      { type: "text", value: " Sheila " },
+      { type: "blank", id: "past-2-2", answers: ["arrive"], placeholder: "arrive" },
+      { type: "text", value: "?" },
+
+      { type: "text", value: "\n2- " },
+      { type: "blank", id: "past-2-3", answers: ["Did"], placeholder: "did" },
+      { type: "text", value: " you " },
+      { type: "blank", id: "past-2-4", answers: ["watch"], placeholder: "watch" },
+      { type: "text", value: " the match?" },
+
+      { type: "text", value: "\n3- The nightclub " },
+      { type: "blank", id: "past-2-5", answers: ["didn't close"], placeholder: "not close" },
+      { type: "text", value: " until 3 a.m." },
+
+      { type: "text", value: "\n4- We " },
+      { type: "blank", id: "past-2-6", answers: ["didn't visit"], placeholder: "not visit" },
+      { type: "text", value: " the museum." },
+
+      { type: "text", value: "\n5- Mary and Sue " },
+      { type: "blank", id: "past-2-7", answers: ["chatted"], placeholder: "chat" },
+      { type: "text", value: " for hours." },
+
+      { type: "text", value: "\n6- I " },
+      { type: "blank", id: "past-2-8", answers: ["studied"], placeholder: "study" },
+      { type: "text", value: " for the English test last night." },
+
+      { type: "text", value: "\n7- Henry " },
+      { type: "blank", id: "past-2-9", answers: ["didn't like"], placeholder: "not like" },
+      { type: "text", value: " the food in the café." },
+
+      { type: "text", value: "\n8- When " },
+      { type: "blank", id: "past-2-10", answers: ["did"], placeholder: "did" },
+      { type: "text", value: " the party " },
+      { type: "blank", id: "past-2-11", answers: ["finish"], placeholder: "finish" },
+      { type: "text", value: "?" },
+
+      { type: "text", value: "\n9- My grandparents " },
+      { type: "blank", id: "past-2-12", answers: ["lived"], placeholder: "live" },
+      { type: "text", value: " in Greece. Now they live in the UK." },
+    ],
+  },
+
+  {
+    id: "past-003",
+    title: "Exercise 3 – Complete the conversation",
+    instructions: "Put one word in each gap.",
+    type: "fill-in-the-blanks",
+    parts: [
+      { type: "text", value: "Mel: Did you and Joe go out last night?\nRosa: Yes, we did. We went to a restaurant.\nMel: Did you drive there?\nRosa: No, we " },
+      { type: "blank", id: "past-3-1", answers: ["didn't"], placeholder: "..." },
+      { type: "text", value: ". We went by bus.\nMel: What did you wear?\nRosa: I " },
+      { type: "blank", id: "past-3-2", answers: ["wore"], placeholder: "..." },
+      { type: "text", value: " my new jeans.\nMel: What did you have to eat?\nRosa: I " },
+      { type: "blank", id: "past-3-3", answers: ["had"], placeholder: "..." },
+      { type: "text", value: " a curry.\nMel: What time did you leave?\nRosa: We " },
+      { type: "blank", id: "past-3-4", answers: ["left"], placeholder: "..." },
+      { type: "text", value: " at half past eight.\nMel: Did you go home after that?\nRosa: No. We " },
+      { type: "blank", id: "past-3-5", answers: ["watched"], placeholder: "..." },
+      { type: "text", value: " a film at the cinema.\nMel: What time did you get home?\nRosa: We didn't " },
+      { type: "blank", id: "past-3-6", answers: ["get"], placeholder: "..." },
+      { type: "text", value: " home until 11.30." },
+    ],
+  },
+
+  {
+    id: "past-004",
+    title: "Exercise 4 – Complete using the Past Simple",
+    type: "fill-in-the-blanks",
+    parts: [
+      { type: "text", value: "1- When " },
+      { type: "blank", id: "past-4-1", answers: ["did"], placeholder: "did" },
+      { type: "text", value: " the film " },
+      { type: "blank", id: "past-4-2", answers: ["finish"], placeholder: "finish" },
+      { type: "text", value: "?" },
+
+      { type: "text", value: "\n2- They " },
+      { type: "blank", id: "past-4-3", answers: ["didn't like"], placeholder: "not like" },
+      { type: "text", value: " the food in the café." },
+
+      { type: "text", value: "\n3- We " },
+      { type: "blank", id: "past-4-4", answers: ["didn't phone"], placeholder: "not phone" },
+      { type: "text", value: " because it was late." },
+
+      { type: "text", value: "\n4- I " },
+      { type: "blank", id: "past-4-5", answers: ["studied"], placeholder: "study" },
+      { type: "text", value: " yesterday morning." },
+
+      { type: "text", value: "\n5- The man " },
+      { type: "blank", id: "past-4-6", answers: ["stopped"], placeholder: "stop" },
+      { type: "text", value: " his car near my house." },
+
+      { type: "text", value: "\n6- What time " },
+      { type: "blank", id: "past-4-7", answers: ["did"], placeholder: "did" },
+      { type: "text", value: " he " },
+      { type: "blank", id: "past-4-8", answers: ["arrive"], placeholder: "arrive" },
+      { type: "text", value: "?" },
+
+      { type: "text", value: "\n7- " },
+      { type: "blank", id: "past-4-9", answers: ["Did"], placeholder: "did" },
+      { type: "text", value: " you " },
+      { type: "blank", id: "past-4-10", answers: ["watch"], placeholder: "watch" },
+      { type: "text", value: " the match?" },
+
+      { type: "text", value: "\n8- The shop " },
+      { type: "blank", id: "past-4-11", answers: ["didn't open"], placeholder: "not open" },
+      { type: "text", value: " until 10 a.m." },
+    ],
+  },
+
+  {
+    id: "past-005",
+    title: "Exercise 5 – Complete the conversation",
+    instructions: "Put one word in each gap.",
+    type: "fill-in-the-blanks",
+    parts: [
+      { type: "text", value: "Anna: Did you and Matt go out last night?\nJane: Yes, we did. We went to a restaurant.\nAnna: Did you go there by bus?\nJane: No, we " },
+      { type: "blank", id: "past-5-1", answers: ["didn't"], placeholder: "..." },
+      { type: "text", value: ". We took a taxi.\nAnna: What did you wear?\nJane: I " },
+      { type: "blank", id: "past-5-2", answers: ["wore"], placeholder: "..." },
+      { type: "text", value: " my new skirt.\nAnna: What did you have to eat?\nJane: I " },
+      { type: "blank", id: "past-5-3", answers: ["had"], placeholder: "..." },
+      { type: "text", value: " a pizza.\nAnna: What time did you leave?\nJane: We " },
+      { type: "blank", id: "past-5-4", answers: ["left"], placeholder: "..." },
+      { type: "text", value: " at eight o'clock.\nAnna: Did you go home after that?\nJane: No. We " },
+      { type: "blank", id: "past-5-5", answers: ["watched"], placeholder: "..." },
+      { type: "text", value: " a film at the cinema.\nAnna: When did you get home?\nJane: We didn't " },
+      { type: "blank", id: "past-5-6", answers: ["get"], placeholder: "..." },
+      { type: "text", value: " home until 12." },
+    ],
+  },
+];
